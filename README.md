@@ -1,30 +1,36 @@
-# to-do-list
+# TO-DO App
 
-# Todo App Requirements
+This application allows you to create and manage multiple task lists with a simple interface.
 
-## 1. Task Management
+```
+████████╗ ██████╗       ██████╗  ██████╗
+╚══██╔══╝██╔═══██╗      ██╔══██╗██╔═══██╗
+   ██║   ██║   ██║█████╗██║  ██║██║   ██║
+   ██║   ██║   ██║╚════╝██║  ██║██║   ██║
+   ██║   ╚██████╔╝      ██████╔╝╚██████╔╝
+   ╚═╝    ╚═════╝       ╚═════╝  ╚═════╝
+```
 
-- Create new tasks with titles and descriptions
-- Mark tasks as complete/incomplete
-- Edit existing tasks
-- Delete tasks
+## Technologies Used
 
-## 2. Task Organization
+- HTML5
+- CSS3
+- Vanilla JavaScript
+- Local Storage API
 
-- Group tasks into categories/lists
-- Basic priority levels (high, medium, low)
-- Simple due date functionality
+## How to Use
 
-## 3. User Interface
+1. **Create a List**: Type a name in the "New list" field and press Enter
+2. **Add Tasks**: Select a list, then type your task in the "New task" field and press Enter
+3. **Complete a Task**: Click the checkbox ([-]) next to any task to mark it complete
+4. **Restore a Task**: Click a completed task to move it back to the active list
+5. **Clear Completed Tasks**: Click the "Clear" button to remove all completed tasks
+6. **Delete a List**: Select a list and click the "Delete" button to remove it entirely
 
-- Clean, responsive design that works on desktop and mobile
-- List view of all tasks
-- Simple filtering (by completion status, category)
-- Data persistence using localStorage
+## Data Storage
 
-## 4. OOP Implementation
+This application uses your browser's localStorage to save your lists and tasks. Your data stays on your device and persists between sessions, but will not sync between different devices or browsers.
 
-- Task class for task objects
-- TaskList/Category class for organizing tasks
-- TaskManager class to handle operations
-- UI class to handle rendering and user interaction
+---
+
+Version 1.1 - Created with ♥
