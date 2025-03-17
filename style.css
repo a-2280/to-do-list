@@ -1,0 +1,228 @@
+/* 
+COLORS
+BG: #ffffff
+TXT: #202124
+LT-TXT: #5f6368
+EX-LT-TXT: #e8eaed
+RED: #ea4335
+GREEN: #34a853
+BLUE: #4285f4
+LT-BLUE: #24c1e0
+YELLOW: #fbbc04
+PURPLE: #a142f4
+*/
+
+html {
+  font-family: monospace;
+  color: #202124;
+}
+
+.all-tasks {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.list-body,
+.todo-list-body {
+  border: 1.5px solid #202124;
+  padding: 1rem;
+}
+
+.task-list-title,
+.todo-list-title,
+.todo-list-header,
+.todo-list-button {
+  font-size: 1rem;
+  color: #5f6368;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+li::before {
+  content: "[-]";
+  padding-right: 0.5rem;
+}
+
+.list-form-button,
+.add-task-button {
+  background-color: transparent;
+  padding: 0;
+  border: none;
+  cursor: pointer;
+  transition: color 0.2s;
+}
+
+.list-form-button:hover,
+.add-task-button:hover {
+  background-color: transparent;
+  padding: 0;
+  border: none;
+  cursor: pointer;
+  color: #34a853;
+}
+
+input[type="text"] {
+  border: none;
+  border-bottom: 1.5px solid #202124;
+}
+
+input[type="text"]:focus {
+  outline-width: 0;
+}
+
+input[type="text"]::placeholder {
+  color: #5f6368;
+}
+
+.todo-checkbox {
+  appearance: none;
+  -webkit-appearance: none;
+}
+
+.todo-checkbox::before {
+  content: "[-]";
+}
+
+.todo-checkbox:hover::before {
+  content: "[x]";
+  color: #ea4335;
+}
+
+.todo-checkbox:checked::before {
+}
+
+.list-form {
+  margin-top: 1rem;
+}
+
+.todo-list-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+}
+
+.done-header {
+  margin: 1.5rem 0;
+  border-top: 1px dashed #202124;
+}
+
+.done-task-title {
+  text-decoration: line-through;
+  cursor: pointer;
+}
+
+.done-checkbox {
+  appearance: none;
+  -webkit-appearance: none;
+}
+
+.done-checkbox::before {
+  content: "[x]";
+  color: #ea433575;
+}
+
+.done-checkbox:checked::before {
+  content: "[x]";
+  color: #ea433575;
+}
+
+.todo-list-button {
+  background-color: transparent;
+  border: none;
+  transition: color 0.2s;
+  cursor: pointer;
+}
+
+.todo-list-button:hover {
+  color: #ea4335;
+}
+
+input[type="checkbox"] {
+  cursor: pointer;
+}
+
+.done-task {
+  color: #20212450;
+  cursor: pointer;
+}
+
+header {
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+}
+
+.todo-list {
+  margin-right: 1rem;
+  visibility: hidden;
+}
+
+.list-text-input {
+  width: 7rem;
+}
+
+.task-lists {
+  margin-left: 1rem;
+}
+
+.todo-list-footer {
+  display: flex;
+  justify-content: space-between;
+}
+
+pre {
+  margin: 2rem 0;
+  color: #4285f4;
+}
+
+footer {
+  position: absolute;
+  bottom: 1rem;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.version {
+  color: #e8eaed;
+}
+
+.active-list-item {
+  font-weight: bolder;
+}
+
+.task-list-title {
+  font-weight: normal;
+}
+
+.list-name {
+  cursor: pointer;
+}
+
+.list-name:hover {
+  font-weight: bolder;
+}
+
+.list-item {
+  cursor: pointer;
+}
+
+.list-item:hover {
+  font-weight: bolder;
+}
+
+.active-list-item::before {
+  content: "[#]";
+  padding-right: 0.5rem;
+}
+
+.hide {
+  display: none;
+}
+
+.loading {
+  visibility: hidden;
+}

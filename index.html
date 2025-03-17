@@ -4,33 +4,69 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="reset.css" />
     <script defer src="script.js"></script>
     <title>To-Do List</title>
   </head>
-  <body>
-    <h1>Todo List</h1>
-    <button class="add-task-button">Add Task</button>
+  <body class="loading">
+    <header>
+      <pre>
+████████╗ ██████╗       ██████╗  ██████╗ 
+╚══██╔══╝██╔═══██╗      ██╔══██╗██╔═══██╗
+   ██║   ██║   ██║█████╗██║  ██║██║   ██║
+   ██║   ██║   ██║╚════╝██║  ██║██║   ██║
+   ██║   ╚██████╔╝      ██████╔╝╚██████╔╝
+   ╚═╝    ╚═════╝       ╚═════╝  ╚═════╝  </pre
+      >
+    </header>
 
-    <dialog class="dialog-box">
-      <form class="form" method="dialog">
-        <div class="form-title">
-          <label for="title">Title:</label>
-          <input type="text" name="title" id="title" />
+    <div class="all-tasks">
+      <div class="task-lists">
+        <h2 class="task-list-title">Lists</h2>
+        <div class="list-body">
+          <ul class="list-container"></ul>
+          <form class="list-form" action="">
+            <button class="list-form-button">[+]</button>
+            <input
+              type="text"
+              name="new-list-name"
+              id="new-list-name"
+              placeholder="New list"
+              class="list-text-input"
+            />
+          </form>
         </div>
-        <div class="form-description">
-          <label for="description">Description:</label>
-          <input type="text" name="description" id="description" />
+      </div>
+
+      <div class="todo-list">
+        <div class="todo-list-header">
+          <h2 class="todo-list-title"></h2>
+          <p></p>
         </div>
-
-        <div class="error-element"></div>
-
-        <div class="form-buttons">
-          <button class="form-cancel-button">Cancel</button>
-          <button class="form-submit-button">Submit</button>
+        <div class="todo-list-body">
+          <div class="todo"></div>
+          <form action="" class="task-form">
+            <button class="add-task-button">[+]</button>
+            <input
+              type="text"
+              name="new-task-name"
+              id="new-task-name"
+              placeholder="New task"
+              class="new-task-input"
+            />
+          </form>
+          <div class="done-header"></div>
+          <div class="done"></div>
         </div>
-      </form>
-    </dialog>
+        <div class="todo-list-footer">
+          <button class="todo-list-button clear-button">Clear</button>
+          <button class="todo-list-button delete-button">Delete</button>
+        </div>
+      </div>
+    </div>
 
-    <ul class="task-list-container"></ul>
+    <footer>
+      <p class="version">/==Version 1.1==/</p>
+    </footer>
   </body>
 </html>
