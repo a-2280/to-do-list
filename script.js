@@ -36,8 +36,6 @@ const clearFinishedTasksButton = document.querySelector(".clear-button");
 const deleteListButton = document.querySelector(".delete-button");
 const todoListElement = document.querySelector(".todo-list");
 
-todoListElement.classList.add("hide");
-
 (function () {
   const style = document.createElement("style");
   style.textContent = "body { visibility: hidden; }";
