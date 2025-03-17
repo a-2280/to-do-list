@@ -55,6 +55,8 @@ listContainer.addEventListener("click", (e) => {
     const selectedList = lists.find((list) => list.id === listId);
     todoListTitle.innerText = selectedList.name;
 
+    taskInput.value = "";
+
     renderTasks();
     updateTaskCount();
     saveData();
